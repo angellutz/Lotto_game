@@ -1,53 +1,65 @@
 :root {
-  --primary-color: #fff;
-  --secondary-color: #000;
-  --user-select: #a3a2df;
-  --winner-select: #f38300;
-  --user-remove: #bcbcbc;
-  --btn-primary: #000;
-  --btn-shadow: rgba(0, 0, 0, 0.451);
+	--primary-color: #fff;
+	--secondary-color: #000;
+	--user-select: #a3a2df;
+	--winner-select: #f38300;
+	--user-remove: #bcbcbc;
+	--btn-primary: #000;
+	--btn-shadow: rgba(0, 0, 0, 0.451);
 }
 
 html {
-  font-size: 10px;
+	font-size: 10px;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 h1 {
-  letter-spacing: 0.25rem;
-  position: relative;
+	letter-spacing: 0.25rem;
+	position: relative;
 }
 
 h1::before {
-  content: "";
-  width: 7rem;
-  height: 2px;
-  background: var(--primary-color);
-  position: absolute;
-  bottom: -1rem;
-  left: 50%;
-  transform: translateX(-50%);
+	content: '';
+	width: 7rem;
+	height: 2px;
+	background: var(--primary-color);
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 #wrapper {
-  width: 29rem;
+	width: 29rem;
 }
 
 #ticket-container,
 .btn {
-  border-radius: 1rem !important;
+	border-radius: 1rem !important;
 }
 
 .btn {
-  letter-spacing: 0.25rem;
-  transition: box-shadow 0.3s ease-in-out !important;
+	letter-spacing: 0.25rem;
+	transition: box-shadow 0.3s ease-in-out !important;
 }
 
 .btn:hover {
-  box-shadow: 5px 5px 10px var(--btn-shadow);
+	box-shadow: 5px 5px 10px var(--btn-shadow);
+}
+
+.rounded-container {
+	width: 2rem;
+	height: 2rem;
+	padding: 1rem;
+	border-radius: 50%;
+	border: 1px solid var(--secondary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
 }
