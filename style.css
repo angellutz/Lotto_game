@@ -65,9 +65,10 @@ h1::before {
 .ticket-num-container {
   width: 2rem;
   height: 2rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.chosen-num-container {
+.play-num-container {
   width: 5rem;
   height: 5rem;
 }
