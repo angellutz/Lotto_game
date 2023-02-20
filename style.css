@@ -88,6 +88,8 @@ hr {
   height: 9rem;
   cursor: pointer;
   position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .user-remove-icon {
@@ -103,5 +105,16 @@ hr {
 
 .group-container:hover .user-remove-icon {
   top: 7rem;
-  z-index: 2;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.opacity-off {
+  opacity: 1;
 }
